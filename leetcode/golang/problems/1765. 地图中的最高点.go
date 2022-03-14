@@ -1,4 +1,4 @@
-package exercise
+package problems
 
 type pair struct{x, y int}
 var dirs = []pair{{-1, 0}, {1, 0}, {0, -1}, {0, 1}}

@@ -1,4 +1,4 @@
-package exercise
+package problems
 
 func FindLUSlength(a string, b string) int {
     if a == b {
