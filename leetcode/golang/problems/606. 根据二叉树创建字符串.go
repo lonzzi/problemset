@@ -5,12 +5,6 @@ import (
 	"strconv"
 )
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 // 低效率版本
 // func Tree2str(root *TreeNode) string {
 // 	ans := ""
