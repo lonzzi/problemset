@@ -23,14 +23,5 @@
                 "isDefault": true
             }
         },
-        // {
-        //     "type": "shell",
-        //     "label": "remove binary file",
-        //     "command": "/usr/bin/rm",
-        //     "args": [
-        //         "-rf",
-        //         "${fileDirname}/${fileBasenameNoExtension}"
-        //     ],
-        // }
     ]
 }

@@ -9,7 +9,8 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/bin/${fileBasenameNoExtension}"
+                "${fileDirname}/bin/${fileBasenameNoExtension}",
+                "-std=c++11",
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -22,14 +23,5 @@
                 "isDefault": true
             }
         },
-        // {
-        //     "type": "shell",
-        //     "label": "remove binary file",
-        //     "command": "/usr/bin/rm",
-        //     "args": [
-        //         "-rf",
-        //         "${fileDirname}/${fileBasenameNoExtension}"
-        //     ],
-        // }
     ]
 }
