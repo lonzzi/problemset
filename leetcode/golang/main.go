@@ -16,5 +16,9 @@ func main() {
 	// ))
 	// fmt.Println(problems.FindContentChildren([]int{3, 4, 5, 7, 10}, []int{1, 2, 3, 8}))
 	// fmt.Println(problems.WiggleMaxLength([]int{1, 17, 5, 10, 13, 15, 10, 5, 16, 8}))
-	fmt.Println(problems.LongestWord([]string{"yo", "ew", "fc", "zrc", "yodn", "fcm", "qm", "qmo", "fcmz", "z", "ewq", "yod", "ewqz", "y"}))
+	// fmt.Println(problems.LongestWord([]string{"yo", "ew", "fc", "zrc", "yodn", "fcm", "qm", "qmo", "fcmz", "z", "ewq", "yod", "ewqz", "y"}))
+	// fmt.Println(problems.ImageSmoother([][]int{{1, 1, 1}, {1, 0, 1}, {1, 1, 1}}))
+	// fmt.Println(problems.SubsetsWithDup([]int{1, 2, 2}))
+	// fmt.Println(problems.TrailingZeroes(20))
+	fmt.Println(problems.CanReorderDoubled([]int{2,1,2,6}))
 }
