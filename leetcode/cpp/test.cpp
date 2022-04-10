@@ -3,51 +3,28 @@
 
 using namespace std;
 
-int n;
-vector<ll> w;
-vector<ll> path;
-set<ll> ans;
-
-void dfs(int startIndex, char ch) {
-	if (path.size() == w.size()) {
-		return;
-	}
-	for (int i = startIndex; i < w.size(); i++) {
-		if (path.size() == 0) {
-			path.push_back(w[i]);
-		} else if (ch == '+') {
-			path[0] += w[i];
-		} else if (ch == '-') {
-			path[0] -= w[i];
-		}
-        if (path[0] > 0) {
-			ans.insert(path[0]);
-		}
-
-		dfs(i + 1, '+');
-		dfs(i + 1, '-');
-
-		if (ch == '+') {
-			path[0] -= w[i];
-		}
-		if (ch == '-') {
-			path[0] += w[i];
-		}
-	}
-}
+int a[100][100];
 
 int main() {
-	cin >> n;
-	for (int i = 0; i < n; i++) {
-		ll temp = 0;
-		cin >> temp;
-		w.push_back(temp);
+	int num = 1;
+	for (int i = 1; i <= 40; i++) {
+		if (i % 2 == 1) {
+			for (int x = i, y = 1; x >= 1 && y <= i ; x--, y++) {
+				a[x][y] = num++;
+			}
+		} else {
+			for (int x = 1, y = i; x <= i && y >= 1 ; x++, y--) {
+				a[x][y] = num++;
+			}
+		}
 	}
 
-	dfs(0, '+');
-	dfs(0, '-');
-
-	cout << ans.size() << endl;
+	for (int i = 1; i <= 20; i++) {
+		for (int j = 1; j <= 20; j++) {
+			cout << a[i][j] << " ";
+		}
+		cout << endl;
+	}
 
 	return 0;
 }
